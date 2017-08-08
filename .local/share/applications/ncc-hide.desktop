@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Netcat Chat - Hide
+Name[en_GB]=Netcat Chat - Hide
+Comment=Toggle the display of the Netcat Chat window
+Type=Application
+Path=
+Exec=bash -c 'xdotool windowminimize "$(printf '%d' "$(wmctrl -l | grep -E "Netcat Chat Client" | cut -d " " -f 1)")"'
+Icon=ncc
+Terminal=false
+StartupNotify=false
+

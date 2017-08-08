@@ -1,0 +1,16 @@
+Syntax:
+  ncc [netcat-options]
+
+Description
+  Netcat Chat is a graphical front-end to netcat (nc).
+  It uses a xfce4-terminal for program display and interaction.
+
+Example
+  Start a 'server' on one computer:
+    ncc -l 9999
+
+  Start a 'client' on another:
+    ncc 9999 192.168.1.50
+
+See Also
+  nc

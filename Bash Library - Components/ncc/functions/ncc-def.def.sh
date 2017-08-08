@@ -3,4 +3,3 @@ function ncc {
 	sleep 0.5
 	wmctrl -F -r 'Netcat Chat Client' -b add,skip_taskbar,skip_pager
 }
-

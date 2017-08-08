@@ -8,4 +8,3 @@ Exec=bash -c 'xdotool windowminimize "$(printf '%d' "$(wmctrl -l | grep -E "Netc
 Icon=ncc
 Terminal=false
 StartupNotify=false
-

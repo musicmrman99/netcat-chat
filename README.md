@@ -21,6 +21,8 @@ $ ncc <ip-address> 4999
 1. Start a server on one machine by running the `Netcat Chat - Server` shortcut from the machine's applications menu.
 2. Start a client on another machine to connect to the server by running the `Netcat Chat - Client` shortcut form that machine's applications menu.
 
+You can also show and hide all (but not specific) Netcat Chat windows with the `Netcat Chat - Show` and `Netcat Chat - Hide` shortcuts from your applications menu.
+
 Dependencies
 --------------------
 

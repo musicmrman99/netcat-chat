@@ -9,12 +9,16 @@ Usage
 ### The command line form
 Start a server on one machine:
 ```
-$ ncc -l 4999
+$ # Syntax:
+$ # ncc -l <recv-port> <send-port>
+$ ncc -l 4999 4998
 ```
 
 Start a client to connect to the server on another machine:
 ```
-$ ncc <ip-address> 4999
+$ # Syntax:
+$ # ncc -c <ip-address> <recv-port> <send-port>
+$ ncc -c 192.168.1.2 4998 4999
 ```
 
 ### Using the .desktop shortcuts

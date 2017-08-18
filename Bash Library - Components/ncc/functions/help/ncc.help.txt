@@ -1,16 +1,36 @@
 Syntax:
-  ncc [netcat-options]
+  ncc -h
+  ncc -l (in-port) (out-port)
+  ncc -c (address) (in-port) (out-port)
 
 Description
   Netcat Chat is a graphical front-end to netcat (nc).
+
+  It either listens on (server), or connects to (client) two ports, together
+  representing a pair of one-way channels. Note how the ports for the client
+  and server must cross over, eg. the client's out is sending data to the
+  server's in and vice-versa. Full picture:
+
+    +------------------------------+
+    |           Client             |
+    | In: 6680           Out: 6681 |
+    |       ^             |        |
+    |   ____|_____________|        |
+    |  |    |___________________   |
+    |  |                        |  |
+    |  V                        |  |
+    | In: 6681           Out: 6680 |
+    |           Server             |
+    +------------------------------+
+
   It uses a xfce4-terminal for program display and interaction.
 
 Example
   Start a 'server' on one computer:
-    ncc -l 9999
+    ncc -l 6681 6680
 
   Start a 'client' on another:
-    ncc 9999 192.168.1.50
+    ncc -c 192.168.1.2 6680 6681
 
 See Also
   nc

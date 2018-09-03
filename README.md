@@ -14,8 +14,8 @@ bashctl --update-symlinks
 
 Move some files around (you may want to merge them if you've customised these files yourself):
 ```
-mv "$BASH_LIB_COMPONENT_ROOT"/ncc/.local ~/
-mv "$BASH_LIB_COMPONENT_ROOT"/ncc/.ncc ~/
+rsync -rv "$BASH_LIB_COMPONENT_ROOT"/ncc/.local/ ~/.local/
+rsync -rv "$BASH_LIB_COMPONENT_ROOT"/ncc/.ncc/ ~/.ncc/
 ```
 
 Then add the following to your `.bashrc`:

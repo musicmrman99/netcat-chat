@@ -3,6 +3,26 @@ Netcat Chat
 
 Netcat Chat is a basic, hacked-together graphical chat utility.
 
+Installation
+--------------------
+
+Use it under [`bashctl`](https://github.com/musicmrman99/bashctl "bashctl on GitHub"):
+```
+git clone https://github.com/musicmrman99/netcat-chat.git "$BASH_LIB_COMPONENT_ROOT"/ncc
+bashctl --update-symlinks
+```
+
+Move some files around (you may want to merge them if you've customised these files yourself):
+```
+mv "$BASH_LIB_COMPONENT_ROOT"/ncc/.local ~/
+mv "$BASH_LIB_COMPONENT_ROOT"/ncc/.ncc ~/
+```
+
+Then add the following to your `.bashrc`:
+```sh
+src ncc:ncc
+```
+
 Usage
 --------------------
 
